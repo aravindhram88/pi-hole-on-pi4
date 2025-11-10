@@ -36,3 +36,32 @@ Harden your home network with Pi-hole on Raspberry Pi 4 — block ads, trackers,
 - Connect via SSH:
   ```bash
   ssh pi@<raspberry_pi_ip>
+
+### 3. Update System
+Run the following commands to update your system:
+
+sudo apt update && sudo apt upgrade -y
+
+### 4. Install Pi-hole
+Run the automated installer:
+
+curl -sSL https://install.pi-hole.net | bash
+
+### 5. Configure Router DNS
+- Log into your router’s admin panel
+- Set Primary DNS to your Pi-hole IP address
+- Disable IPv6 DNS or configure it to use Pi-hole if supporte
+
+### 6. Verify Installation
+Check Pi-hole status:
+
+pihole status
+
+Optional: Install Unbound
+Unbound improves privacy by resolving DNS queries recursively.
+- Install Unbound: 
+
+sudo apt install -y unbound
+
+
+
