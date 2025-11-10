@@ -35,8 +35,7 @@ Harden your home network with Pi-hole on Raspberry Pi 4 — block ads, trackers,
 
 - Insert microSD card and power on the Pi
 - Connect via SSH:
-
-      ```bash
+        
       ssh pi@<raspberry_pi_ip>
 
 ### 3. Update System
@@ -69,6 +68,4 @@ Unbound improves privacy by resolving DNS queries recursively.
 Install Unbound: 
 
     sudo apt install -y unbound
-
-
 
