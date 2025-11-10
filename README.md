@@ -1,9 +1,10 @@
 # pi-hole-on-pi4
+
 Harden your home network with Pi-hole on Raspberry Pi 4 — block ads, trackers, and take control of DNS.
 
 ---
 
-## 🧰 Hardware Requirements
+## Hardware Requirements
 
 - Raspberry Pi 4 (4GB RAM)
 - 64GB microSD card
@@ -13,7 +14,7 @@ Harden your home network with Pi-hole on Raspberry Pi 4 — block ads, trackers,
 
 ---
 
-## 📦 Software Requirements
+## Software Requirements
 
 - Raspberry Pi OS Lite (64-bit recommended)
 - Pi-hole (latest version)
@@ -21,7 +22,7 @@ Harden your home network with Pi-hole on Raspberry Pi 4 — block ads, trackers,
 
 ---
 
-## 🚀 Installation Steps
+## Installation Steps
 
 ### 1. Flash Raspberry Pi OS
 
@@ -34,18 +35,21 @@ Harden your home network with Pi-hole on Raspberry Pi 4 — block ads, trackers,
 
 - Insert microSD card and power on the Pi
 - Connect via SSH:
-  ```bash
-  ssh pi@<raspberry_pi_ip>
+
+      ```bash
+      ssh pi@<raspberry_pi_ip>
 
 ### 3. Update System
+
 Run the following commands to update your system:
 
-sudo apt update && sudo apt upgrade -y
+    sudo apt update && sudo apt upgrade -y
 
 ### 4. Install Pi-hole
+
 Run the automated installer:
 
-curl -sSL https://install.pi-hole.net | bash
+    curl -sSL https://install.pi-hole.net | bash
 
 ### 5. Configure Router DNS
 - Log into your router’s admin panel
@@ -53,15 +57,18 @@ curl -sSL https://install.pi-hole.net | bash
 - Disable IPv6 DNS or configure it to use Pi-hole if supporte
 
 ### 6. Verify Installation
+
 Check Pi-hole status:
 
-pihole status
+    pihole status
 
-Optional: Install Unbound
+## Optional: Install Unbound
+
 Unbound improves privacy by resolving DNS queries recursively.
-- Install Unbound: 
 
-sudo apt install -y unbound
+Install Unbound: 
+
+    sudo apt install -y unbound
 
 
 
