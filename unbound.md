@@ -1,6 +1,3 @@
-Here’s a clean and complete version of your unbound.md file — written to match the style and structure of your README.md. It walks through installing and configuring Unbound as a recursive DNS resolver for Pi-hole on your Raspberry Pi 4.
-
-📄 unbound.md
 # Unbound DNS Resolver Setup for Pi-hole
 
 Unbound is a lightweight, secure, and privacy-focused DNS resolver that works perfectly alongside Pi-hole. It allows your Raspberry Pi to resolve DNS queries directly from authoritative servers, eliminating reliance on third-party DNS providers.
