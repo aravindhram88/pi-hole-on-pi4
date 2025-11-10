@@ -16,6 +16,8 @@ Update your package list and install Unbound:
     
     sudo apt install -y unbound
 
+    
+
 ## Configure Unbound
 
 Create a configuration file for Pi-hole:
@@ -63,7 +65,8 @@ Unbound uses root DNS servers to resolve queries. Download the latest list:
 127.0.0.1#5335
 - Uncheck other upstream DNS providers
 
-✅ Test Unbound
+## Test Unbound
+
 Run a test query to verify Unbound is working:
 
     dig pi-hole.net @127.0.0.1 -p 5335
