@@ -53,7 +53,7 @@ Run the automated installer:
 ### 5. Configure Router DNS
 - Log into your router’s admin panel
 - Set Primary DNS to your Pi-hole IP address
-- Disable IPv6 DNS or configure it to use Pi-hole if supporte
+- Disable IPv6 DNS or configure it to use Pi-hole if supported
 
 ### 6. Verify Installation
 
